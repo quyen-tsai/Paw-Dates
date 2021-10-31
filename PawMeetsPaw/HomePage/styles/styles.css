@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  background-color:rgb(5, 5, 1);
+}
+
+header nav{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.navbar{
+  display: flex;
+  margin: 20px auto 0 auto;
+  justify-content: center;
+  transition: all .5s ease;
+}
+.menu a:hover{
+ color: #ff91f6;
+}
+
+
+.logo img{
+  height: 90%;
+  width: 100%;
+}
+
+nav .menu{
+  display: flex;
+}
+
+nav .menu li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav .menu a{
+  color: #57abff;
+  font-size: 23px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .menu {
+  color: #000;
+}
+
+.text-content{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index:auto;
+}
+
+header .text-content .text{
+  font-size: 45px;
+  color: #f71eda;
+  font-weight: 500;  
+	-webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
+}
+
+header .text-content .name{
+color: #eff0f3;
+ font-size: 75px;
+ font-weight: 600;
+ margin: -20px 0 0 -5px;
+}
+
+header .text-content .job{
+ color: #2c3350;
+ font-size: 40px;
+ margin: 5px 0;
+ margin-top: -4px;
+ display: flex;
+}
+.text-content .typing-text{
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 8px solid #1de2d1;
+  animation: typing 4s steps(15) infinite;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 6ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+.text-content .job .one{
+  color: #1de2d1;
+}
+.text-content .job .two{
+  color: #1de2d1;
+}
+.buttons{
+  margin: 20px 0 0 50px;
+}
+.text-content .buttons button{
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 23px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-image: linear-gradient( 10deg, #81f5e5     10%, #ff5fff 100%);
+}
+.buttons button:hover{
+  transform: scale(0.92);
+}
+
+header .media-icons{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.media-icons a{
+ margin-top: 10px;
+ font-size: 20px;
+ font-weight: 500;
+ text-decoration: none;
+ opacity: 0.7;
+ color: #5d7dff;
+ transition: all .5s ease;
+}
+.media-icons a:hover{
+  color: #ff91f6;
+ opacity: 1;
+ transform: scale(2);
+
+}
