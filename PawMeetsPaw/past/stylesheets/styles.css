@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 html,
 body {
   height: 100%;
@@ -35,7 +42,7 @@ body {
 
 .navbar {
   display: 1 1 auto;
-  margin: 20px auto 0 auto;
+  margin: 0;
   justify-content: center;
   transition: all .5s ease;
 }
@@ -68,6 +75,7 @@ nav .menu {
 }
 
 .logo img {
+  display: block;
   width: 50%;
   height: 60%;
 }
