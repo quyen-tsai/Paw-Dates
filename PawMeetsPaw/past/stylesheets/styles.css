@@ -24,12 +24,8 @@ header nav {
   justify-content: center;
   transition: all .5s ease;
   background-color: #000;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
+
 
 .menu a:hover {
   color: #ff91f6;
