@@ -134,3 +134,9 @@ radio {
 .dropdown:hover .dropbtn {
       background-color: #3e8e41;
 }
+
+.radios {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+}

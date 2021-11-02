@@ -51,6 +51,35 @@
               placeholder="user@email.com">
           </div>
 
+
+          <div class="form-group">
+            <label for="name">Pet type: </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pet_type" value="cat" checked>
+                Cat(s)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pet_type" value="dog" checked>
+                Dog(s)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pet_type" value="bird" checked>
+                Bird(s)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Number of pet(s)</label>
+            <input class="form-control" name="pet_amount" id="pet_amount" autofocus required pattern=[0-9\s]+ required
+              placeholder="0-9">
+          </div>
+
           <div class="form-group">
             <label for="month">Month</label>
             <select id="month" class="form-control" name="month">
@@ -138,8 +167,12 @@
 
     ​
   </section>
-  ​
-</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script src="reserve/scripts/datastore.js" charset="utf-8"></script>
+  ​ <script src="reserve/scripts/info.js" charset="utf-8"></script>
+  <script src="reserve/scripts/formhandler.js" charset="utf-8"></script>
+  <script src="reserve/scripts/main.js" charset="utf-8"></script>
+
 </body>
 
 </html>
