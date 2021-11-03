@@ -82,3 +82,9 @@ header.title {
     color: #fff;
     text-shadow: #000 0 0 .2em;
 }
+
+div {
+
+    border-color: #000;
+    border-style: solid;
+}
