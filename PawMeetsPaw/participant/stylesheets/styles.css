@@ -63,8 +63,15 @@ nav .menu {
     z-index: auto;
 }
 
+
 body {
     background-color: rgb(100, 192, 245);
+}
+
+.reservation {
+    font-size: 20px;
+    background-color: rgb(212, 233, 252);
+    padding: 2%;
 }
 
 header.title {
