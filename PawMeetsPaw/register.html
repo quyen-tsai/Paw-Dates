@@ -16,12 +16,11 @@
         <nav>
             <div class="navbar">
                 <ul class="menu">
-                    <li><a href="/PawMeetsPaw/home.html">Home</a></li>
-                    <li><a href="/PawMeetsPaw/past.html">Past Events</a></li>
-                    <li><a href="/PawMeetsPaw/reserve.html">Reservation</a>
-                    </li>
-                    <li><a href="/PawMeetsPaw/participant.html">Participants</a></li>
-                    <li><a href="/PawMeetsPaw/login.html">Log in</a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/past.html">Past Events</a></li>
+                    <li><a href="/reserve.html">Reservation</a></li>
+                    <li><a href="/participant.html">Participants</a></li>
+                    <li><a href="/login.html">Log in</a></li>
                     <li><a href="#">Register</a></li>
                 </ul>
                 <div class="logo">
@@ -31,6 +30,41 @@
         </nav>
     </header>
 
+    <section>
+        <div class="panel panel-primary">
+          <div class="panel body">
+            <form data-reservation="form">
+    
+              <div class="form-group">
+                <label for="name">Username</label>
+                <input class="form-control" name="user" id="user" autofocus required pattern=[a-zA-Z\s]+ required
+                  placeholder="John Smith">
+              </div>
+    
+              <div class="form-group">
+                <label for="emailInput">Email </label>
+                <input class="form-control" type="email" name="emailAddress" id="emailInput" required
+                  placeholder="user@email.com">
+              </div>
+    
+              <div class="form-group">
+                <label for="passwordInput">Password </label>
+                <input class="form-control" type="password" name="password" id="passInput" required
+                  placeholder="password">
+              </div>
+
+              <div class="form-group">
+                <label for="confirmInput">Confirm Password </label>
+                <input class="form-control" type="passConfirm" name="passConfirm" id="passCOnfirmInput" required
+                  placeholder="password">
+              </div>
+    
+              <button type="register" class="btn btn-light">Register</button>
+              
+            </form>
+          </div> <!-- panel body -->
+        </div> <!-- panel panel-primary -->
+    </section>
 </body>
 
 </html>
