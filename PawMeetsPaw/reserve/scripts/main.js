@@ -6,7 +6,6 @@
 
     var App = window.App;
     var Info = App.Info;
-    var DataStore = App.DataStore;
     var FormHandler = App.FormHandler;
     var FireBaseDataStore = App.FireBaseDataStore;
 
