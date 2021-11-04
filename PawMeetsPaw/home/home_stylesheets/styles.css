@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(5, 5, 1);
+  background-color: rgb(100, 192, 245);
 }
 
 header nav {
@@ -20,14 +20,16 @@ header nav {
 
 .navbar {
   display: flex;
-  margin: 20px auto 0 auto;
+  margin: 0;
   justify-content: center;
   transition: all .5s ease;
+  background-color: black;
 }
 
 .menu a:hover {
   color: #ff91f6;
 }
+
 
 
 .logo img {
