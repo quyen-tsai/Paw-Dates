@@ -1,7 +1,7 @@
 var DETAIL_IMAGE_SELECTOR = "[data-image-role=\"target\"]";
 var DETAIL_TITLE_SELECTOR = "[data-image-role=\"title\"]";
 var THUMBNAIL_LINK_SELECTOR = "[data-image-role=\"trigger\"]";
-var LEFT_RIGHT_BUTTONS = '[data-image-button="button"]';
+var LEFT_RIGHT_BUTTONS = "[data-image-button=\"button\"]";
 
 var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
@@ -84,7 +84,8 @@ function leftRightButtons() {
     event.preventDefault();
 
     for (var i = 0; i < tbArray.length; i++) {
-      if (tbArray[i].getAttribute("data-image-title") == getCurrentTitle.textContent) {
+      if (tbArray[i].getAttribute("data-image-title") === getCurrentTitle.textContent) {
+        console.log('pass')
         if (i == 0) {
           currentImage = imageFromThumb(tbArray[tbArray.length - 1]);
           currentTitle = titleFromThumb(tbArray[tbArray.length - 1]);
@@ -102,7 +103,7 @@ function leftRightButtons() {
 
   rightButton.addEventListener("click", function (event) {
     event.preventDefault();
-
+    console.log('clicked right');
     for (var i = 0; i < tbArray.length; i++) {
       if (tbArray[i].getAttribute("data-image-title") == getCurrentTitle.textContent) {
         if (i == tbArray.length - 1) {
@@ -118,6 +119,7 @@ function leftRightButtons() {
       }
     }
   });
+
 }
 
 
