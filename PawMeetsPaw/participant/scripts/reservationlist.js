@@ -18,23 +18,6 @@
       var rowElement = new Row(reservation);
       this.$element.append(rowElement.$element);
     }
-
-    removeRow(email) {
-      this.$element
-        .find('[value="' + email + '"]')
-        .closest('[data-coffee-order="checkbox"]')
-        .remove();
-    }
-    
-    addClickHandler(fn) {
-      this.$element.on('click', 'input', function (event) {
-        var email = event.target.value;
-        fn(email)
-          .then(function () {
-            this.removeRow(email);
-          }.bind(this));
-      }.bind(this));
-    }
      
   }
 
