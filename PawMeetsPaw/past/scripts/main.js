@@ -1,7 +1,7 @@
 var DETAIL_IMAGE_SELECTOR = "[data-image-role=\"target\"]";
 var DETAIL_TITLE_SELECTOR = "[data-image-role=\"title\"]";
 var THUMBNAIL_LINK_SELECTOR = "[data-image-role=\"trigger\"]";
-var LEFT_RIGHT_BUTTONS = "[data-image-button=\"button\"]";
+var LEFT_RIGHT_BUTTONS = '[data-image-button="button"]';
 
 var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
